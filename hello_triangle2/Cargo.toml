@@ -1,0 +1,18 @@
+[package]
+name = "hello_triangle2"
+version = "0.1.0"
+authors = ["Luis Reis <luis.m.reis@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gr-context = { git = "https://github.com/eendeego/rust-gr-context", branch = "main" }
+opengles = { git = "https://github.com/eendeego/rust-opengles", branch = "master" }
+libc = "0.2.99"
+const_format = "0.2.22"
+
+
+[features]
+vc4 = ["gr-context/vc4"]
+vc6 = ["gr-context/vc6"]
